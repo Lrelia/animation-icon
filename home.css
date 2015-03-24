@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+i {
+    display: block;
+}
+
+.container {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    float: left;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #C6E2C6;
+}
+
+/* = 三角系列 */
+.tri {
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #421231;
+    border-left: 5px solid #421231;
+    border-radius: 4px;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -webkit-animation-name:up;
+    -webkit-animation-duration:2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+}
+@-webkit-keyframes up {
+    0% {
+        margin-top: -80px;
+    }
+}
+.tri-down {
+    border: 0;
+    border-bottom: 5px solid #421231;
+    border-right: 5px solid #421231;
+}
+
+/* = 圆系列 */
+.cir1, .cir2 {
+    width: 10px;
+    height: 10px;
+    background: #421231;
+    border-radius: 10px;
+}
+.cir1 {
+    margin-top: -34px;
+    -webkit-transform:translate3d(0, 0, 0);
+    -webkit-animation-name:lup;
+    -webkit-animation-duration:1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+}
+.cir2 {
+    margin-top: 34px;
+    margin-left: 12px;
+    -webkit-transform:translate3d(0, 0, 0);
+    -webkit-animation-name:rdown;
+    -webkit-animation-duration:1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+}
+@-webkit-keyframes lup {
+    0% {
+    }
+    25% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 34px;
+    }
+    100% {
+        margin-top: -34px;
+    }
+}
+@-webkit-keyframes rdown {
+    0% {
+    }
+    25% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: -34px;
+    }
+    100% {
+        margin-top: 34px;
+    }
+}
