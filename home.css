@@ -94,3 +94,37 @@ i {
         margin-top: 34px;
     }
 }
+.wrap {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    -webkit-transform:translate3d(0, 0, 0);
+    -webkit-animation-name:loading;
+    -webkit-animation-duration:1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+}
+.cir {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 6px solid #421231;
+    clip: rect(0px,30px,24px,0px);
+}
+.cir3 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+@-webkit-keyframes loading {
+    form {
+
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transform-orgin: 50% 50%;
+        transform-orgin: 50% 50%;
+    }
+}
